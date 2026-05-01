@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers - EmpresX</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; }
+    header { 
+      background: #111; 
+      color: #fff; 
+      padding: 15px 40px; 
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    h1 { margin: 0; }
+    .container { padding: 40px; }
+    .job { background: #fff; margin-bottom: 20px; padding: 20px; border-radius: 10px; transition: 0.3s; }
+    .job:hover { transform: translateY(-5px); }
+    .apply-btn { margin-top: 10px; padding: 10px 15px; background: red; color: #fff; border: none; cursor: pointer; border-radius: 5px; }
+    /* 🔥 POPUP FORM */
+    .popup { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; }
+    .popup-content { background: #fff; padding: 30px; border-radius: 10px; width: 300px; }
+    .popup-content input { width: 100%; margin-bottom: 10px; padding: 10px; }
+    .close { float: right; cursor: pointer; font-size: 20px; }
+    button.submit { width: 100%; background: black; color: #fff; padding: 10px; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" class="logo" alt="EmpresX Logo">
+    <h1>Join EmpresX</h1>
+    <p>We are hiring talented people</p>
+  </header>
+  <div class="container">
+    <div class="job">
+      <h3>Frontend Developer</h3>
+      <p>Experience: 1-2 years</p>
+      <p>Location: Remote</p>
+      <button class="apply-btn" onclick="openForm()">Apply Now</button>
+    </div>
+    <div class="job">
+      <h3>Backend Developer</h3>
+      <p>Experience: 2+ years</p>
+      <p>Location: Remote</p>
+      <button class="apply-btn" onclick="openForm()">Apply Now</button>
+    </div>
+    <div class="job">
+      <h3>Graphic Designer</h3>
+      <p>Experience: 1+ years</p>
+      <p>Location: Remote</p>
+      <button class="apply-btn" onclick="openForm()">Apply Now</button>
+    </div>
+  </div>
+  <!-- 🔥 POPUP -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closeForm()">×</span>
+      <h3>Apply Now</h3>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <input type="file">
+      <button class="submit">Submit</button>
+    </div>
+  </div>
+  <script>
+    function openForm() { document.getElementById("popup").style.display = "flex"; }
+    function closeForm() { document.getElementById("popup").style.display = "none"; }
+  </script>
+</body>
+</html>

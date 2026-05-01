@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAY CONNECT TECHNOLOGIES | Web Development & Software Solutions</title>
+  <meta name="description" content="MAY CONNECT TECHNOLOGIES offers web development, mobile apps, API docs, CHATBOT, and software solutions in Nigeria.">
+  <meta name="keywords" content="web development, mobile apps, API docs, CHATBOT, software solutions, Nigeria">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f5f5f5; }
+    header { background: #111; color: #fff; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1; }
+    .logo { display: flex; align-items: center; gap: 10px; }
+    .logo img { height: 60px; width: 60px; border-radius: 50%; object-fit: cover; }
+    nav a { color: #fff; margin-left: 20px; text-decoration: none; }
+    nav a:hover { color: red; }
+    /* HERO */
+    .hero { height: 90vh; background: linear-gradient(to right, #8b0000, #000); display: flex; justify-content: center; align-items: center; text-align: center; color: #fff; flex-direction: column; padding: 20px; }
+    .hero h1 { font-size: 50px; }
+    .hero p { max-width: 600px; margin: 20px 0; }
+    .hero button { padding: 12px 25px; border: none; background: red; color: #fff; cursor: pointer; border-radius: 5px; }
+    /* ABOUT */
+    .about { padding: 60px 20px; text-align: center; background: #fff; }
+    /* SERVICES */
+    .services { padding: 60px 20px; background: #111; color: #fff; text-align: center; }
+    .service-box { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 30px; }
+    .card { background: #222; padding: 25px; border-radius: 10px; transition: 0.3s; }
+    .card i { font-size: 30px; margin-bottom: 10px; color: red; }
+    .card:hover { transform: translateY(-10px); background: red; }
+    .card:hover i { color: #fff; }
+    /* WHY US */
+    .why { padding: 60px 20px; text-align: center; background: #fff; }
+    /* FAQ */
+    .faq { padding: 60px 20px; background: #f5f5f5; text-align: center; }
+    .faq-box { max-width: 600px; margin: 0 auto; text-align: left; }
+    .faq-item { margin-bottom: 20px; }
+    .faq-item h3 { margin-bottom: 5px; }
+    /* CTA */
+    .cta { padding: 60px 20px; background: red; color: #fff; text-align: center; }
+    .cta form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto; }
+    .cta input, .cta textarea { padding: 10px; border: none; border-radius: 5px; }
+    .cta button { padding: 12px; background: #000; color: #fff; border: none; cursor: pointer; border-radius: 5px; }
+    footer { background: #111; color: #fff; text-align: center; padding: 15px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="MAY.jpeg">
+      <h2>MAY CONNECT TECHNOLOGIES</h2>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <h1>Build Your Future With Technology</h1>
+    <p>We create powerful digital solutions that help businesses grow and succeed.</p>
+    <button onclick="location.href='#contact'">Get Started</button>
+  </section>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>MAY CONNECT TECHNOLOGIES operates following the mission of “Delivering Excellence in Technology” by constantly converting customer’s requirements into creative & valuable solutions. We uphold forthrightness, the extent of fulfillment & reliability with our much-appreciated customers by creating a mainstay of work ethics, and constant improvement. With immense pride and confidence, we can state that we are positively treading the same path matching our mission.</p>
+  </section>
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <div class="card"><i class="fas fa-code"></i>Web Development</div>
+      <div class="card"><i class="fas fa-mobile-alt"></i>Mobile Apps</div>
+      <div class="card"><i class="fas fa-file-alt"></i>API Documentation</div>
+      <div class="card"><i class="fas fa-robot"></i>CHATBOT</div>
+      <div class="card"><i class="fas fa-laptop-code"></i>Software Solutions</div>
+    </div>
+  </section>
+  <!-- WHY -->
+  <section class="why">
+    <h2>Why Choose Us</h2>
+    <p>MAY CONNECT TECHNOLOGIES is a team of software engineers, technology champions, and Professional designers. We are focused on delivering amazing software products to our clients. Currently, we are 10+ software engineers, innovative designers, technology consultants, and digital marketers..</p>
+  </section>
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-box">
+      <div class="faq-item">
+        <h3>What services do you offer?</h3>
+        <p>We offer web development, mobile apps, API docs, CHATBOT, and software solutions.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I contact you?</h3>
+        <p>Use the contact form below or email us at info@mayconnect.com</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you do custom projects?</h3>
+        <p>Yes, we build custom solutions tailored to your needs.</p>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section class="cta" id="contact">
+    <h2>Ready to Work With Us?</h2>
+    <form action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <footer>
+    © 2026 MAY CONNECT TECHNOLOGIES. All rights reserved.
+  </footer>
+</body>
+</html>
