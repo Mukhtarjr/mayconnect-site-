@@ -189,19 +189,19 @@
             padding: 15px;
         }
         /* Chatbot styles */
-        #chatBox {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            width: 300px;
-            height: 400px;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            display: none;
-            flex-direction: column;
-        }
+#chatBox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 450px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+}
         #chatHeader {
             background: #007bff;
             color: #fff;
@@ -302,7 +302,10 @@
 <div id="chatBox">
     <div id="chatHeader">Chat with us!</div>
     <div id="chatLog"></div>
-    <input id="userInput" type="text" placeholder="Type a message...">
+    <div style="display: flex; padding: 10px;">
+        <input id="userInput" type="text" placeholder="Type a message..." style="flex-grow: 1; padding: 10px; border: none; border-radius: 5px 0 0 5px;">
+        <button id="sendBtn" style="padding: 10px; border: none; background: #007bff; color: #fff; border-radius: 0 5px 5px 0; cursor: pointer;">Send</button>
+    </div>
 </div>
 <button id="chatBtn" onclick="toggleChat()">Chat</button>
 <footer>
