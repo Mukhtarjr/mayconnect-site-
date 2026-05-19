@@ -188,6 +188,49 @@
             text-align: center;
             padding: 15px;
         }
+        /* Chatbot styles */
+        #chatBox {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            display: none;
+            flex-direction: column;
+        }
+        #chatHeader {
+            background: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+        }
+        #chatLog {
+            flex-grow: 1;
+            padding: 10px;
+            overflow-y: auto;
+        }
+        #userInput {
+            padding: 10px;
+            border: none;
+            border-top: 1px solid #ddd;
+        }
+        #chatBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -230,33 +273,41 @@
         <h2>Why Choose Us</h2>
         <p>MAY CONNECT TECHNOLOGIES is a team of software engineers, technology champions, and Professional designers. We are focused on delivering amazing software products to our clients. Currently, we are 10+ software engineers, innovative designers, technology consultants, and digital marketers..</p>
     </section>
-    <!-- FAQ -->
-    <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-box">
-            <div class="faq-item">
-                <h3>What services do you offer?</h3>
-                <p>We offer web development, mobile apps, API docs, CHATBOT, and software solutions.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How can I contact you?</h3>
-                <p>Use the contact form below or email us at info@mayconnect.com</p>
-            </div>
-            <!-- Add more FAQs as needed -->
+   <!-- FAQ -->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-box">
+        <div class="faq-item">
+            <h3>What services do you offer?</h3>
+            <p>We offer web development, mobile apps, API docs, CHATBOT, and software solutions.</p>
         </div>
-    </section>
-    <!-- CTA -->
-    <section class="cta" id="contact">
-        <h2>Get In Touch</h2>
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button>Send Message</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2024 MAY CONNECT TECHNOLOGIES</p>
-    </footer>
+        <div class="faq-item">
+            <h3>How can I contact you?</h3>
+            <p>Use the contact form below or email us at info@mayconnect.com</p>
+        </div>
+        <!-- Add more FAQs as needed -->
+    </div>
+</section>
+<!-- CTA -->
+<section class="cta" id="contact">
+    <h2>Get In Touch</h2>
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send Message</button>
+    </form>
+</section>
+<!-- Chatbot -->
+<div id="chatBox">
+    <div id="chatHeader">Chat with us!</div>
+    <div id="chatLog"></div>
+    <input id="userInput" type="text" placeholder="Type a message...">
+</div>
+<button id="chatBtn" onclick="toggleChat()">Chat</button>
+<footer>
+    <p>&copy; 2024 MAY CONNECT TECHNOLOGIES</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
