@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAY CONNECT TECHNOLOGIES | Web Development & Software Solutions</title>
-    <meta name="description" content="MAY CONNECT TECHNOLOGIES offers web development, mobile apps, API docs, CHATBOT, and software solutions in Nigeria.">
+    <title>MAYCONNECT TECHNOLOGIES NIG LTD | Web Development & Software Solutions</title>
+    <meta name="description" content="MAYCONNECT TECHNOLOGIES NIG LTD offers web development, mobile apps, API docs, CHATBOT, and software solutions in Nigeria.">
     <meta name="keywords" content="web development, mobile apps, API docs, CHATBOT, software solutions, Nigeria">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -267,7 +267,7 @@
     <header>
         <div class="logo">
             <img src="MAY.jpeg">
-            <h2>MAY CONNECT TECHNOLOGIES</h2>
+            <h2>MAYCONNECT TECHNOLOGIES NIG LTD</h2>
         </div>
         <nav>
             <a href="#home">Home</a>
@@ -285,7 +285,7 @@
     <!-- ABOUT -->
     <section class="about" id="about">
         <h2>About Us</h2>
-        <p>MAY CONNECT TECHNOLOGIES operates following the mission of “Delivering Excellence in Technology” by constantly converting customer’s requirements into creative & valuable solutions. We uphold forthrightness, the extent of fulfillment & reliability with our much-appreciated customers by creating a mainstay of work ethics, and constant improvement. With immense pride and confidence, we can state that we are positively treading the same path matching our mission.</p>
+        <p>MAYCONNECT TECHNOLOGIES NIG LTD operates following the mission of “Delivering Excellence in Technology” by constantly converting customer’s requirements into creative & valuable solutions. We uphold forthrightness, the extent of fulfillment & reliability with our much-appreciated customers by creating a mainstay of work ethics, and constant improvement. With immense pride and confidence, we can state that we are positively treading the same path matching our mission.</p>
     </section>
     <!-- SERVICES -->
     <section class="services" id="services">
@@ -301,7 +301,7 @@
     <!-- WHY -->
     <section class="why">
         <h2>Why Choose Us</h2>
-        <p>MAY CONNECT TECHNOLOGIES is a team of software engineers, technology champions, and Professional designers. We are focused on delivering amazing software products to our clients. Currently, we are 10+ software engineers, innovative designers, technology consultants, and digital marketers..</p>
+        <p>MAYCONNECT TECHNOLOGIES NIG LTD is a team of software engineers, technology champions, and Professional designers. We are focused on delivering amazing software products to our clients. Currently, we are 10+ software engineers, innovative designers, technology consultants, and digital marketers.</p>
     </section>
     <!-- FAQ -->
     <section class="faq">
@@ -313,9 +313,8 @@
             </div>
             <div class="faq-item">
                 <h3>How can I contact you?</h3>
-                <p>Use the contact form below or email us at info@mayconnect.com</p>
+                <p>Use the contact form below or email us at mayconnecttech@gmail.com</p>
             </div>
-            <!-- Add more FAQs as needed -->
         </div>
     </section>
     <!-- CTA -->
@@ -328,15 +327,26 @@
             <button>Send Message</button>
         </form>
     </section>
+
+    <!-- COMPANY INFO FOR GOOGLE PLAY VERIFICATION -->
+    <section style="background:#000; color:#fff; text-align:center; padding:20px; font-size:14px;">
+        <h3 style="margin-bottom:10px;">MAYCONNECT TECHNOLOGIES NIG LTD</h3>
+        <p><strong>DUNS:</strong> 352296147</p>
+        <p><strong>Address:</strong> 27 Yantsire, Gama B, Kano 700282, Nigeria</p>
+        <p><strong>Phone:</strong> +2349121243474</p>
+        <p><strong>Email:</strong> mayconnecttech@gmail.com</p>
+        <p><strong>Services:</strong> Web Development, Mobile Apps, Data Dashboards</p>
+    </section>
+
     <footer>
-        <p>&copy; 2024 MAY CONNECT TECHNOLOGIES</p>
+        <p>&copy; 2024 MAYCONNECT TECHNOLOGIES NIG LTD</p>
     </footer>
     <script>
         let userName = '';
         let askingName = true;
         document.addEventListener('DOMContentLoaded', () => {
             const chatBox = document.getElementById('chatLog');
-            chatBox.innerHTML += `<div class="message bot">Hi! I'm MAY CONNECT BOT. What's your name?</div>`;
+            chatBox.innerHTML += `<div class="message bot">Hi! I'm MAYCONNECT BOT. What's your name?</div>`;
             chatBox.scrollTop = chatBox.scrollHeight;
         });
         function toggleChat() {
@@ -353,7 +363,6 @@
             const quickRepliesHtml = quickReplies.map(reply => `<button class="quick-reply">${reply}</button>`).join('');
             chatBox.innerHTML += `<div class="quick-replies">${quickRepliesHtml}</div>`;
             chatBox.scrollTop = chatBox.scrollHeight;
-            // Add event listeners for quick replies
             const quickReplyButtons = document.querySelectorAll('.quick-reply');
             quickReplyButtons.forEach(button => {
                 button.addEventListener('click', () => {
@@ -373,7 +382,6 @@
             chatBox.scrollTop = chatBox.scrollHeight;
             showTypingIndicator();
             const botResponse = await getBotResponse(message);
-            // Remove the typing indicator
             const typingIndicator = document.querySelector('.typing');
             if (typingIndicator) {
                 typingIndicator.remove();
@@ -390,16 +398,16 @@
                 return `Nice to meet you ${userName}! How May i Help You?`;
             }
             if (message.includes('services')) {
-                return `We offer web dev, mobile apps, API docs, CHATBOT, and software solutions. Contact us at info@mayconnect.com or WhatsApp: <a href="https://wa.me/2349112823771" target="_blank">+234 911 282 3771</a>, <a href="https://wa.me/2348117988561" target="_blank">+234 811 798 8561</a> for more info.`;
+                return `We offer web dev, mobile apps, API docs, CHATBOT, and software solutions. Contact us at mayconnecttech@gmail.com or WhatsApp: <a href="https://wa.me/2349121243474" target="_blank">+234 912 124 3474</a> for more info.`;
             }
-            if (message.includes('contact')) return 'Email us at info@mayconnect.com | WhatsApp: <a href="https://wa.me/2349112823771" target="_blank">+234 911 282 3771</a>, <a href="https://wa.me/2348117988561" target="_blank">+234 811 798 8561</a>';
-            if (message.includes('help')) return ` Need help? 🤔 - Type "services" for our services - Type "contact" for contact info - Check the FAQs from the website - Escalate to human support: Email info@mayconnect.com or WhatsApp <a href="https://wa.me/2349112823771" target="_blank">+234 911 282 3771</a> / <a href="https://wa.me/2348117988561" target="_blank">+234 811 798 8561</a> - Provide feedback: We'll love to hear from you! 😊 - Troubleshooting tips: Check our blog for common issues and solutions `;
+            if (message.includes('contact')) return 'Email us at mayconnecttech@gmail.com | WhatsApp: <a href="https://wa.me/2349121243474" target="_blank">+234 912 124 3474</a>';
+            if (message.includes('help')) return ` Need help? 🤔 - Type "services" for our services - Type "contact" for contact info - Check the FAQs from the website - Escalate to human support: Email mayconnecttech@gmail.com or WhatsApp <a href="https://wa.me/2349121243474" target="_blank">+234 912 124 3474</a> - Provide feedback: We'll love to hear from you! 😊 - Troubleshooting tips: Check our blog for common issues and solutions `;
             if (message.includes('clear')) {
                 document.getElementById('chatLog').innerHTML = '';
                 askingName = true;
-                return 'Chat cleared! Hi! I\'m MAY CONNECT BOT. What\'s your name?';
+                return 'Chat cleared! Hi! I\'m MAYCONNECT BOT. What\'s your name?';
             }
-            return `Sorry, I didn't get that. For more support, contact us at info@mayconnect.com or WhatsApp: <a href="https://wa.me/2349112823771" target="_blank">+234 911 282 3771</a>, <a href="https://wa.me/2348117988561" target="_blank">+234 811 798 8561</a>`;
+            return `Sorry, I didn't get that. For more support, contact us at mayconnecttech@gmail.com or WhatsApp: <a href="https://wa.me/2349121243474" target="_blank">+234 912 124 3474</a>`;
         }
         document.getElementById('sendBtn').addEventListener('click', () => sendMessage());
         document.getElementById('userInput').addEventListener('keypress', (e) => {
