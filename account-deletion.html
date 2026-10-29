@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+
+  <title>Account Deletion | MAYCONNECT TECHNOLOGIES NIG LTD</title>
+
+  <meta name="description"
+    content="Request account deletion for TEEVERSH DATA PLUG, MAYCONNECT DATA PLUG, SADEEQ DATA HUB, BNHABEEB DATA HUB, and MSDATASUB, developed by MAYCONNECT TECHNOLOGIES NIG LTD.">
+
+  <style>
+    :root {
+      --bg: #080d18;
+      --surface: #101827;
+      --surface-light: #172337;
+      --blue: #087cff;
+      --blue-light: #168dff;
+      --text: #f5f8ff;
+      --muted: #a8b6ca;
+      --border: rgba(255, 255, 255, 0.09);
+      --green: #36d399;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      background: #101010;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 72px;
+      height: 72px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: white;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 17px;
+      line-height: 1.35;
+      letter-spacing: .2px;
+    }
+
+    .brand-name span {
+      display: block;
+      font-size: 11px;
+      color: #7cbaff;
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: #d4dceb;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .nav a:hover {
+      color: #62adff;
+    }
+
+    .hero {
+      background: linear-gradient(115deg, #0784ff 0%, #0754b7 100%);
+      padding: 86px 24px 90px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.13);
+      pointer-events: none;
+    }
+
+    .hero::before {
+      width: 360px;
+      height: 360px;
+      top: -210px;
+      right: -100px;
+    }
+
+    .hero::after {
+      width: 300px;
+      height: 300px;
+      bottom: -210px;
+      left: -100px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+      margin: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 13px;
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: 30px;
+      background: rgba(255,255,255,.1);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 65px);
+      line-height: 1.12;
+      letter-spacing: -1.8px;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      color: rgba(255,255,255,.9);
+      font-size: clamp(15px, 2.5vw, 19px);
+      max-width: 670px;
+      margin: auto;
+    }
+
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 13px 22px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform .2s, background .2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-white {
+      background: white;
+      color: #0757b9;
+    }
+
+    .button-outline {
+      border-color: rgba(255,255,255,.5);
+      color: white;
+      background: transparent;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .section {
+      padding: 75px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 0 auto 36px;
+      text-align: center;
+    }
+
+    .section-heading .label {
+      color: #66b0ff;
+      font-weight: 800;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(26px, 4vw, 39px);
+      line-height: 1.25;
+      margin: 12px 0;
+      letter-spacing: -.7px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .app-card {
+      background: linear-gradient(145deg, #131f32, #0d1524);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 23px;
+      display: flex;
+      gap: 17px;
+      align-items: center;
+      transition: border-color .2s, transform .2s;
+    }
+
+    .app-card:hover {
+      border-color: rgba(40,139,255,.65);
+      transform: translateY(-3px);
+    }
+
+    .app-logo {
+      width: 76px;
+      height: 76px;
+      flex: 0 0 76px;
+      border-radius: 17px;
+      object-fit: contain;
+      background: #fff;
+      padding: 7px;
+    }
+
+    .app-info h3 {
+      font-size: 16px;
+      line-height: 1.4;
+      margin-bottom: 5px;
+    }
+
+    .app-info p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .app-tag {
+      display: inline-block;
+      margin-top: 9px;
+      padding: 4px 9px;
+      border-radius: 20px;
+      background: rgba(8,124,255,.14);
+      color: #81bdff;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .7px;
+    }
+
+    .app-card:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: clamp(22px, 4vw, 38px);
+      margin-bottom: 24px;
+    }
+
+    .panel h2 {
+      font-size: 25px;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+
+    .panel > p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 19px;
+    }
+
+    .field {
+      min-width: 0;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      color: var(--text);
+      background: #0a1220;
+      border: 1px solid #29364a;
+      border-radius: 10px;
+      outline: none;
+      font: inherit;
+      font-size: 14px;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #168dff;
+      box-shadow: 0 0 0 3px rgba(22,141,255,.12);
+    }
+
+    select option {
+      background: #101827;
+      color: white;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .hint {
+      display: block;
+      color: #94a4ba;
+      font-size: 11px;
+      margin-top: 7px;
+    }
+
+    .consent {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: var(--muted);
+      font-size: 12px;
+      margin: 20px 0;
+    }
+
+    .consent input {
+      width: 17px;
+      height: 17px;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .button-primary {
+      color: white;
+      background: linear-gradient(110deg, #0784ff, #075ecb);
+      width: 100%;
+      border: none;
+    }
+
+    .privacy-note {
+      margin-top: 15px;
+      color: #93a5bd;
+      font-size: 12px;
+    }
+
+    .status {
+      display: none;
+      padding: 15px;
+      margin-top: 18px;
+      border-radius: 10px;
+      background: rgba(54,211,153,.09);
+      border: 1px solid rgba(54,211,153,.3);
+      color: #9af1cf;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 25px;
+    }
+
+    .info-card {
+      padding: 22px;
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .info-icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: rgba(8,124,255,.16);
+      margin-bottom: 14px;
+      font-size: 19px;
+    }
+
+    .info-card h3 {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .info-card p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .legal-list {
+      padding-left: 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .legal-list li {
+      padding: 6px 0;
+    }
+
+    .notice {
+      border-left: 3px solid var(--blue);
+      padding: 15px 18px;
+      background: rgba(8,124,255,.08);
+      color: #c4d5eb;
+      border-radius: 0 10px 10px 0;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    .contact-link {
+      color: #74b9ff;
+      overflow-wrap: anywhere;
+    }
+
+    .footer {
+      background: #05080f;
+      border-top: 1px solid var(--border);
+      padding: 38px 20px;
+      text-align: center;
+    }
+
+    .footer img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: contain;
+      background: white;
+      padding: 4px;
+      margin-bottom: 12px;
+    }
+
+    .footer h3 {
+      font-size: 15px;
+      margin-bottom: 7px;
+    }
+
+    .footer p {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 16px 0;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      color: #a9cfff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 720px) {
+      .header-inner {
+        padding: 16px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .brand img {
+        width: 58px;
+        height: 58px;
+      }
+
+      .brand-name {
+        font-size: 15px;
+      }
+
+      .nav {
+        gap: 18px;
+      }
+
+      .hero {
+        padding: 68px 20px;
+      }
+
+      .app-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .app-card:last-child {
+        grid-column: auto;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .field.full {
+        grid-column: auto;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 55px 0;
+      }
+
+      .app-card {
+        padding: 17px;
+      }
+
+      .app-logo {
+        width: 64px;
+        height: 64px;
+        flex-basis: 64px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="header-inner">
+      <a class="brand" href="./index.html" aria-label="MAYCONNECT home">
+        <img src="./MAY.jpeg" alt="MAYCONNECT logo">
+        <div class="brand-name">
+          MAYCONNECT TECHNOLOGIES NIG LTD
+          <span>BUILDING DIGITAL SOLUTIONS</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="#platforms">Our Platforms</a>
+        <a href="#request">Delete Account</a>
+        <a href="#privacy">Privacy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">🔒 Privacy &amp; Account Control</div>
+
+        <h1>Your Account.<br>Your Choice.</h1>
+
+        <p>
+          We respect your privacy. If you no longer wish to use one of our
+          platforms, you can submit an account-deletion request through this page.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#request" class="button button-white">
+            Request Account Deletion →
+          </a>
+          <a href="#privacy" class="button button-outline">
+            Learn About Your Data
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="platforms">
+      <div class="container">
+        <div class="section-heading">
+          <div class="label">One Technology Company</div>
+          <h2>Choose Your Platform</h2>
+          <p>
+            MAYCONNECT TECHNOLOGIES NIG LTD develops and operates the
+            following data and digital-service platforms.
+          </p>
+        </div>
+
+        <div class="app-grid">
+
+          <article class="app-card">
+            <img class="app-logo" src="./TEEVERSH.png"
+                 alt="TEEVERSH DATA PLUG logo">
+            <div class="app-info">
+              <h3>TEEVERSH DATA PLUG</h3>
+              <p>Data, airtime and wallet services.</p>
+              <span class="app-tag">ACCOUNT MANAGEMENT</span>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <img class="app-logo" src="./MAY.jpeg"
+                 alt="MAYCONNECT DATA PLUG logo">
+            <div class="app-info">
+              <h3>MAYCONNECT DATA PLUG</h3>
+              <p>Digital data and airtime services.</p>
+              <span class="app-tag">ACCOUNT MANAGEMENT</span>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <img class="app-logo" src="./SADEEQ.PNG"
+                 alt="SADEEQ DATA HUB logo">
+            <div class="app-info">
+              <h3>SADEEQ DATA HUB</h3>
+              <p>Data and digital transaction services.</p>
+              <span class="app-tag">ACCOUNT MANAGEMENT</span>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <img class="app-logo" src="./BNHABEEB.png"
+                 alt="BNHABEEB DATA HUB logo">
+            <div class="app-info">
+              <h3>BNHABEEB DATA HUB</h3>
+              <p>Data and airtime services.</p>
+              <span class="app-tag">ACCOUNT MANAGEMENT</span>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <img class="app-logo" src="./ms.png"
+                 alt="MSDATASUB logo">
+            <div class="app-info">
+              <h3>MSDATASUB</h3>
+              <p>Digital data and airtime services.</p>
+              <span class="app-tag">ACCOUNT MANAGEMENT</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="request">
+      <div class="container">
+        <div class="panel">
+          <h2>Request Account Deletion</h2>
+
+          <p>
+            Complete this form to prepare an account-deletion request.
+            Please identify the platform and the account you used.
+            You do not need to provide your password, transaction PIN,
+            BVN or NIN.
+          </p>
+
+          <form id="deletionForm">
+            <div class="form-grid">
+
+              <div class="field full">
+                <label for="platform">Select your platform *</label>
+                <select id="platform" name="platform" required>
+                  <option value="">Choose a platform</option>
+                  <option>TEEVERSH DATA PLUG</option>
+                  <option>MAYCONNECT DATA PLUG</option>
+                  <option>SADEEQ DATA HUB</option>
+                  <option>BNHABEEB DATA HUB</option>
+                  <option>MSDATASUB</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="accountName">Name associated with account *</label>
+                <input id="accountName" name="accountName"
+                       autocomplete="name" required maxlength="100"
+                       placeholder="Your registered name">
+              </div>
+
+              <div class="field">
+                <label for="accountIdentifier">Account username or email *</label>
+                <input id="accountIdentifier" name="accountIdentifier"
+                       autocomplete="username" required maxlength="150"
+                       placeholder="Username or registered email">
+                <span class="hint">
+                  Use an identifier that helps us locate your account.
+                </span>
+              </div>
+
+              <div class="field full">
+                <label for="contactEmail">Email address for follow-up *</label>
+                <input id="contactEmail" name="contactEmail" type="email"
+                       autocomplete="email" required maxlength="150"
+                       placeholder="you@example.com">
+              </div>
+
+              <div class="field full">
+                <label for="requestType">What would you like deleted? *</label>
+                <select id="requestType" name="requestType" required>
+                  <option value="">Choose a request</option>
+                  <option value="delete_account">
+                    Delete my account and associated data
+                  </option>
+                  <option value="delete_some_data">
+                    Request deletion of eligible data while keeping my account
+                  </option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="details">Additional details (optional)</label>
+                <textarea id="details" name="details" maxlength="1500"
+                  placeholder="Optional details to help us identify your account or understand your request. Do not include passwords, PINs, BVN or NIN."></textarea>
+              </div>
+
+            </div>
+
+            <label class="consent" for="confirmation">
+              <input type="checkbox" id="confirmation" required>
+              <span>
+                I confirm that I am requesting action on the account
+                identified above and that the information I provided is accurate.
+              </span>
+            </label>
+
+            <button type="submit" class="button button-primary">
+              Prepare Deletion Request →
+            </button>
+
+            <div class="status" id="formStatus" role="status"
+                 aria-live="polite"></div>
+
+            <p class="privacy-note">
+              This page does not submit data to a server or delete an account
+              automatically. It prepares an email request for you to review
+              and send. Your account will not be deleted merely by clicking
+              this button.
+            </p>
+          </form>
+        </div>
+
+        <div class="panel">
+          <h2>What Happens After You Request Deletion?</h2>
+          <p>
+            The company will need to locate the relevant account, verify the
+            request where reasonably necessary, and determine which records
+            can be deleted.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-icon">📩</div>
+              <h3>1. Request</h3>
+              <p>
+                Review and send the prepared email using your email application.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">🔍</div>
+              <h3>2. Review</h3>
+              <p>
+                The company reviews the request and may contact you to
+                establish account ownership.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">✓</div>
+              <h3>3. Resolution</h3>
+              <p>
+                Eligible data is deleted and any necessary retention or
+                limitations are explained to you.
+              </p>
+            </div>
+          </div>
+
+          <div class="notice">
+            Submitting a request does not guarantee immediate deletion.
+            The company must actually process approved requests and communicate
+            any applicable limitations. This page does not currently provide
+            automatic deletion or a live request-tracking system.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="privacy">
+      <div class="container">
+        <div class="section-heading">
+          <div class="label">Your Privacy Matters</div>
+          <h2>How Your Data Is Handled</h2>
+          <p>
+            We aim to handle account-deletion requests carefully while
+            protecting users and complying with applicable obligations.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h2>Data That May Be Deleted</h2>
+          <p>
+            Depending on the platform, the account and the applicable
+            obligations, an approved request may cover:
+          </p>
+
+          <ul class="legal-list">
+            <li>Account profile information and associated login identifiers.</li>
+            <li>Personal information that is no longer needed for a lawful purpose.</li>
+            <li>Eligible saved preferences and associated account records.</li>
+            <li>Other eligible personal data associated with the account.</li>
+          </ul>
+
+          <div class="notice">
+            The precise data categories depend on each platform's systems and
+            records. Account deletion must be carried out in the relevant
+            platform's backend and connected systems; removing an app from a
+            phone does not delete the associated account.
+          </div>
+        </div>
+
+        <div class="panel">
+          <h2>Information That May Need to Be Retained</h2>
+          <p>
+            Some information may need to be retained where there is a valid
+            legal, financial, security, fraud-prevention or dispute-resolution
+            reason.
+          </p>
+
+          <ul class="legal-list">
+            <li>
+              Financial and transaction records that must be retained to meet
+              applicable legal or accounting requirements.
+            </li>
+            <li>
+              Records necessary to resolve an outstanding transaction, dispute
+              or suspected fraudulent activity.
+            </li>
+            <li>
+              Information subject to a valid legal obligation or other
+              applicable retention requirement.
+            </li>
+          </ul>
+
+          <p style="margin-top:18px;color:#a8b6ca;font-size:14px">
+            Retained information should be limited to what is necessary and
+            kept only for the applicable retention period. The relevant
+            platform's actual retention periods must be established and
+            followed by the company.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h2>Requesting Partial Data Deletion</h2>
+          <p>
+            If you want eligible personal data deleted but wish to keep your
+            account, select that option in the form. Explain the data you
+            want deleted. Some records may not be eligible for deletion if
+            they must be retained for a valid legal or operational reason.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h2>Who Operates These Platforms?</h2>
+          <p>
+            The five platforms listed on this page were built by
+            <strong>MAYCONNECT TECHNOLOGIES NIG LTD</strong>.
+            Account requests must be handled by the company through the
+            systems and processes applicable to the selected platform.
+          </p>
+
+          <p>
+            For account-deletion requests, use the form above to prepare
+            an email addressed to:
+          </p>
+
+          <p style="margin-top:10px">
+            <a class="contact-link"
+               href="mailto:mayconnectofficial@gmail.com">
+              mayconnectofficial@gmail.com
+            </a>
+          </p>
+
+          <p style="margin-top:16px;color:#a8b6ca;font-size:13px">
+            Please do not send passwords, transaction PINs, BVN, NIN or
+            other unnecessary sensitive information in your request.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="./MAY.jpeg" alt="MAYCONNECT company logo">
+
+    <h3>MAYCONNECT TECHNOLOGIES NIG LTD</h3>
+
+    <p>Building digital solutions for businesses and individuals.</p>
+
+    <div class="footer-links">
+      <a href="./index.html">Company Website</a>
+      <a href="#platforms">Our Platforms</a>
+      <a href="#request">Account Deletion</a>
+      <a href="#privacy">Privacy Information</a>
+    </div>
+
+    <p>
+      &copy; <span id="year"></span> MAYCONNECT TECHNOLOGIES NIG LTD.
+      All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const deletionForm = document.getElementById("deletionForm");
+    const formStatus = document.getElementById("formStatus");
+
+    deletionForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!deletionForm.reportValidity()) {
+        return;
+      }
+
+      const platform = document.getElementById("platform").value;
+      const accountName = document.getElementById("accountName").value.trim();
+      const accountIdentifier =
+        document.getElementById("accountIdentifier").value.trim();
+      const contactEmail = document.getElementById("contactEmail").value.trim();
+      const requestType = document.getElementById("requestType").value;
+      const details = document.getElementById("details").value.trim();
+
+      const requestLabel = requestType === "delete_account"
+        ? "Account and associated data deletion"
+        : "Partial data deletion";
+
+      const subject = "Account Deletion Request - " + platform;
+
+      const body = [
+        "Dear MAYCONNECT TECHNOLOGIES NIG LTD,",
+        "",
+        "I am submitting an account-deletion request.",
+        "",
+        "Platform: " + platform,
+        "Request type: " + requestLabel,
+        "Name associated with account: " + accountName,
+        "Username or registered email: " + accountIdentifier,
+        "Contact email: " + contactEmail,
+        "",
+        "Additional details:",
+        details || "None provided",
+        "",
+        "Please review my request, advise me of any necessary verification,",
+        "and inform me when the request has been processed.",
+        "",
+        "I understand that information subject to valid legal or financial",
+        "retention obligations may not be immediately eligible for deletion.",
+        "",
+        "Thank you."
+      ].join("\n");
+
+      const mailto = "mailto:mayconnectofficial@gmail.com"
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+
+      formStatus.style.display = "block";
+      formStatus.textContent =
+        "Your email request is being prepared. Your account has NOT been "
+        + "deleted. Your email application should open so you can review "
+        + "and send the request. If it does not open, email "
+        + "mayconnectofficial@gmail.com manually.";
+
+      window.location.href = mailto;
+    });
+  </script>
+
+</body>
+</html>
